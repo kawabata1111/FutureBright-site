@@ -133,7 +133,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .header__logo img {
-    height: 40px; /* ロゴの高さを制限 */
+    height: 60px; /* ロゴの高さを大きく変更 */
     width: auto;
     display: block;
 }
@@ -259,7 +259,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 768px) {
     .header { height: 60px; }
     .header__inner { padding: 0 20px; }
-    .header__logo img { height: 30px; } /* スマホ用ロゴサイズ調整 */
+    .header__logo img { height: 40px; } /* スマホ用ロゴサイズ調整 */
     .nav-desktop { display: none; }
     .menu-trigger { display: block; }
 }
