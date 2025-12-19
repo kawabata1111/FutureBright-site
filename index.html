@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureBright株式会社 | 地域から未来を創る</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Lenis & GSAP -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+<body>
+
+    <!-- Noise Texture -->
+    <div class="noise-bg"></div>
+
+    <!-- Loading -->
+    <div class="loading">
+        <div class="loading__logo">
+            <span class="loading__text">FutureBright</span>
+            <div class="loading__overlay"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html">FutureBright</a>
+            </h1>
+            <nav class="nav-desktop pc-only">
+                <a href="index.html" class="nav-link" data-text="TOP"><span>TOP</span></a>
+                <a href="about.html" class="nav-link" data-text="ABOUT"><span>ABOUT</span></a>
+                <a href="service.html" class="nav-link" data-text="SERVICE"><span>SERVICE</span></a>
+                <a href="contact.html" class="nav-link" data-text="CONTACT"><span>CONTACT</span></a>
+            </nav>
+            <button class="menu-trigger sp-only">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-menu__link">TOP</a>
+            <a href="about.html" class="mobile-menu__link">ABOUT</a>
+            <a href="service.html" class="mobile-menu__link">SERVICE</a>
+            <a href="contact.html" class="mobile-menu__link">CONTACT</a>
+        </nav>
+        <div class="mobile-info">
+            <p>FutureBright Inc.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero (Single Image + Vertical Text) -->
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="https://sspark.genspark.ai/cfimages?u1=SilV3m1rJNbmFnMOiUfT7lq1leMNi5I7paHjifQoecYcmKSCubCC6xG4QiCyjoldLoyJhjVv1FkZz%2B0iA7bXhOCAMhHL3o26cxpk4ADxWgfXRg%3D%3D&u2=gYMoHS4TDP4hLTGI&width=2560" alt="希望の光">
+            </div>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <div class="hero__text-wrap">
+                    <h2 class="hero__title-vertical">
+                        <span class="t-line">地域の未来を</span>
+                        <span class="t-line">灯す光。</span>
+                    </h2>
+                    <p class="hero__sub-vertical">
+                        ILLUMINATE THE LOCAL FUTURE
+                    </p>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span class="hero__scroll-text">SCROLL</span>
+                <div class="hero__scroll-bar"></div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section class="section news">
+            <div class="container">
+                <div class="news__inner">
+                    <div class="news__header">
+                        <h3 class="section-heading__jp text-left">お知らせ</h3>
+                        <a href="#" class="btn-text">VIEW ALL</a>
+                    </div>
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a href="#" class="news__link">
+                                <span class="news__date">2025.08.01</span>
+                                <span class="news__cat">INFO</span>
+                                <span class="news__title">FutureBright株式会社を設立いたしました。</span>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#" class="news__link">
+                                <span class="news__date">2025.08.15</span>
+                                <span class="news__cat">SERVICE</span>
+                                <span class="news__title">ふるさと納税支援事業の特設ページを公開しました。</span>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#" class="news__link">
+                                <span class="news__date">2025.09.01</span>
+                                <span class="news__cat">RECRUIT</span>
+                                <span class="news__title">地域と共に働く、創業メンバーの募集を開始しました。</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept -->
+        <section class="section concept">
+            <div class="container">
+                <div class="concept__inner">
+                    <div class="concept__img-wrapper">
+                        <div class="concept__img">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=JNtsTdj02u6jk02%2FEGt8VOobtYzuGnOXfqRM0H%2F3uu%2B2zybHk0SaGOGq%2B5629ojsh%2BVtMXaBqevBoqopJam6rrw7kugGX7cqV%2F2K%2BdBaltRoQ4pEydi8yKN7xRQE%2FIcAwm3kboY%2FmRr1oT3lfDSR1KZZk8uX6FAZhGs8FfC4ZmBkcjWsMcbEdLxzr1eAL01odsHrVfhVI%2BFTAHXxOltPk0TpvkdtcoVI5E3QzQKzXQ%3D%3D&u2=UMaTBqeuglp6I5zk&width=2560" alt="光と影">
+                        </div>
+                    </div>
+                    <div class="concept__content">
+                        <div class="section-heading text-left">
+                            <span class="section-heading__en">OUR VISION</span>
+                            <h3 class="section-heading__jp">「何もない」なんて、<br>言わせない。</h3>
+                        </div>
+                        <p class="concept__lead">
+                            その土地には、その土地だけの物語がある。<br>
+                            まだ誰にも見つけられていない「光」がある。
+                        </p>
+                        <p class="concept__text">
+                            私たちは、ふるさと納税やITの力を使って地域のポテンシャルを掘り起こし、世界と戦えるブランドへと磨き上げます。<br>
+                            すべては、地域の輝く未来のために。
+                        </p>
+                        <a href="about.html" class="btn-arrow"><span>MORE ABOUT US</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section class="section service">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-heading__en">SERVICE</span>
+                    <h3 class="section-heading__jp">事業内容</h3>
+                </div>
+                <div class="service__list">
+                    <!-- 01 -->
+                    <a href="service.html#furusato" class="service-card">
+                        <span class="service-card__num">01</span>
+                        <div class="service-card__img">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=kuggyEoggeOOBAk8Tu6n2DMTeknsuuUkBNxSZmn750J2VZ%2BO4M4bV0o98In2nzs3QxZcUtb1akC5H5El1LgCXBdseznR1q2JTrLL9JNl4bH9KH2U0pk3x8NV5XmsReWLgK56zx2xSgMRBidEPjPLwT4BGihRV9VQ&u2=gWOwWS535LSpBMmr&width=2560" alt="ふるさと納税">
+                        </div>
+                        <h4 class="service-card__title">ふるさと納税支援</h4>
+                        <p class="service-card__desc">
+                            戦略立案からブランディング、運用代行まで。<br>
+                            地域のファンを増やすトータルサポート。
+                        </p>
+                    </a>
+                    <!-- 02 -->
+                    <a href="service.html#it" class="service-card">
+                        <span class="service-card__num">02</span>
+                        <div class="service-card__img">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=sqH3TS1I7N0KA5KA%2BmkU0uaRfHzhycsaxQqQGg4rSIR0cZfcbZvO4%2BmhbtP2PwoCK2iwdVokWayykLai7zzDvm4AP9jaaNAvzyiMYHBbbdB4oG8k4r3KZRQ5QmNnAWJr%2BM5GBj8S&u2=Joy8i0ToBF549ztE&width=2560" alt="IT支援">
+                        </div>
+                        <h4 class="service-card__title">IT化診断・Web制作</h4>
+                        <p class="service-card__desc">
+                            現場起点のDX推進。<br>
+                            ECサイト構築や業務効率化でビジネスを加速。
+                        </p>
+                    </a>
+                    <!-- 03 -->
+                    <a href="service.html#human" class="service-card">
+                        <span class="service-card__num">03</span>
+                        <div class="service-card__img">
+                            <img src="https://sspark.genspark.ai/cfimages?u1=rnARZDDWq863Akqbeyh%2BghPrBuyT%2FIaidRyWeFs629arJSLjAqqgZYMI4jFDHq39Dyntk631fqmVmoLP0QLeFE%2Brpxw9TBmERqSm6J%2BaFpq0xg%3D%3D&u2=33aOPfr1DuDcgRgE&width=2560" alt="人材育成">
+                        </div>
+                        <h4 class="service-card__title">人材育成・研修</h4>
+                        <p class="service-card__desc">
+                            組織を変えるのは「人」。<br>
+                            実践的な研修プログラムで次世代リーダーを育成。
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h2 class="footer__logo">FutureBright</h2>
+                    <p class="footer__info">
+                        FutureBright株式会社<br>
+                        〒279-0014 千葉県浦安市富岡4-6-18<br>
+                        TEL: 080-1731-4634
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer-links">
+                    <a href="privacy.html">PRIVACY POLICY</a>
+                </div>
+                <p>&copy; 2025 FutureBright Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

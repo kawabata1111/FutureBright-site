@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | FutureBright株式会社</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Lenis & GSAP -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+<body>
+
+    <!-- Noise Texture -->
+    <div class="noise-bg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html">FutureBright</a>
+            </h1>
+            <nav class="nav-desktop pc-only">
+                <a href="index.html" class="nav-link" data-text="TOP"><span>TOP</span></a>
+                <a href="about.html" class="nav-link" data-text="ABOUT"><span>ABOUT</span></a>
+                <a href="service.html" class="nav-link" data-text="SERVICE"><span>SERVICE</span></a>
+                <a href="contact.html" class="nav-link" data-text="CONTACT"><span>CONTACT</span></a>
+            </nav>
+            <button class="menu-trigger sp-only">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-menu__link">TOP</a>
+            <a href="about.html" class="mobile-menu__link">ABOUT</a>
+            <a href="service.html" class="mobile-menu__link">SERVICE</a>
+            <a href="contact.html" class="mobile-menu__link">CONTACT</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="page-header__bg">
+                <img src="https://sspark.genspark.ai/cfimages?u1=Yv1byEorasxiUx%2BPGHEPXZOyY%2F5xtSGhmXbc0rn05Q0plTGDi5t0Nl9BSAQDpUamFVVwYO%2FA7LZxXiL0CiN1ZWPKHio%2FErrdhjqxtNco5XKznc%2BPGNDw9L5P2BbhMY9PCyhl0t0ov0SsRyzP4A%3D%3D&u2=RvTLqZpfBEgpjOQ4&width=2560" alt="Contact Header">
+            </div>
+            <div class="page-header__title">
+                <span class="page-header__en">CONTACT</span>
+                <span class="page-header__jp">お問い合わせ</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                TOP > CONTACT
+            </div>
+
+            <!-- Form Section -->
+            <section class="section">
+                <div class="concept__text" style="text-align: center; margin-bottom: 60px;">
+                    事業に関するご相談・ご依頼など、お気軽にお問い合わせください。<br>
+                    下記フォーム、またはお電話・メールにて承っております。
+                </div>
+
+                <div class="form-wrap">
+                    <form action="#" method="post">
+                        <div class="form-item">
+                            <label class="form-label">お名前 <span style="color: #b89c7d">*</span></label>
+                            <input type="text" class="form-input" placeholder="例：山田 太郎" required>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">会社名</label>
+                            <input type="text" class="form-input" placeholder="例：FutureBright株式会社">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">メールアドレス <span style="color: #b89c7d">*</span></label>
+                            <input type="email" class="form-input" placeholder="info@futurebright.co.jp" required>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">電話番号</label>
+                            <input type="tel" class="form-input" placeholder="03-1234-5678">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">お問い合わせ内容 <span style="color: #b89c7d">*</span></label>
+                            <textarea class="form-input" rows="6" placeholder="ご自由にご記入ください" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">送信する</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h2 class="footer__logo">FutureBright</h2>
+                    <p class="footer__info">
+                        FutureBright株式会社<br>
+                        〒279-0014 千葉県浦安市富岡4-6-18<br>
+                        TEL: 080-1731-4634
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer-links">
+                    <a href="privacy.html">PRIVACY POLICY</a>
+                </div>
+                <p>&copy; 2025 FutureBright Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
