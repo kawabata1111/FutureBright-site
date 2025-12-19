@@ -90,7 +90,6 @@ img { max-width: 100%; height: auto; display: block; }
 .loading__text img {
     width: 200px; /* ロード画面のロゴサイズ */
     height: auto;
-    filter: invert(1); /* 黒背景なのでロゴを白く反転 */
 }
 
 .loading__overlay {
@@ -539,9 +538,7 @@ img { max-width: 100%; height: auto; display: block; }
     mix-blend-mode: normal;
 }
 
-.header.is-scrolled .header__logo img {
-    filter: invert(1);
-}
+/* .header.is-scrolled .header__logo img { filter: invert(1); }  <- 削除 */
 
 .header.is-scrolled .menu-trigger span {
     background-color: #fff;
