@@ -1022,3 +1022,86 @@ img { max-width: 100%; height: auto; display: block; }
     .footer__top { flex-direction: column; gap: 50px; }
     .footer__nav ul { flex-direction: column; gap: 20px; }
 }
+
+
+/* ==========================================================================
+   Mobile Optimization (Added)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Layout & Spacing */
+    .container {
+        padding: 0 20px; /* 横幅を広く使えるように余白を減らす */
+    }
+
+    .section {
+        padding: 80px 0; /* 上下の余白を詰める */
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading__jp {
+        font-size: 1.8rem;
+    }
+
+    /* Hero Section */
+    .hero__title-vertical {
+        font-size: 2.2rem; /* 少し控えめに */
+        min-height: auto;
+    }
+
+    .hero__sub-vertical {
+        margin-top: 40px;
+        height: 200px;
+    }
+    
+    /* News Section */
+    .news {
+        padding: 60px 0;
+    }
+    
+    .news__header {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .section-heading__jp.text-left {
+        font-size: 1.5rem;
+    }
+
+    /* Concept Section */
+    .concept__lead {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .concept__text {
+        text-align: left; /* ジャスティファイ解除 */
+        font-size: 0.95rem;
+    }
+
+    /* Service Section */
+    .service-card__num {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-card__title {
+        font-size: 1.2rem;
+    }
+    
+    .service-card__img {
+        height: 200px; /* 画像の高さを少し抑える */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 60px 0 30px;
+    }
+    
+    .footer__logo {
+        font-size: 2rem;
+    }
+}
