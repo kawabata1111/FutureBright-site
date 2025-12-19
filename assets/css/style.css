@@ -126,12 +126,16 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .header__logo {
-    font-family: var(--font-en);
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-    font-weight: 400;
     margin: 0;
     line-height: 1;
+    display: flex; /* 追加: 画像の垂直配置のため */
+    align-items: center; /* 追加 */
+}
+
+.header__logo img {
+    height: 40px; /* ロゴの高さを制限 */
+    width: auto;
+    display: block;
 }
 
 .nav-desktop {
@@ -255,6 +259,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 768px) {
     .header { height: 60px; }
     .header__inner { padding: 0 20px; }
+    .header__logo img { height: 30px; } /* スマホ用ロゴサイズ調整 */
     .nav-desktop { display: none; }
     .menu-trigger { display: block; }
 }
