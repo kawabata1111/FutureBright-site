@@ -252,7 +252,7 @@ img { max-width: 100%; height: auto; display: block; }
 .mobile-menu__link {
     font-family: var(--font-en);
     font-size: 2rem;
-    color: #000;
+    color: #fff; /* テキスト色を白に変更 */
 }
 
 .mobile-info p {
