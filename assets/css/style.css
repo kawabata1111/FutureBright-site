@@ -88,7 +88,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .loading__text img {
-    width: 200px; /* ロード画面のロゴサイズ */
+    width: 300px; /* ロード画面のロゴサイズを拡大 */
     height: auto;
 }
 
@@ -111,7 +111,7 @@ img { max-width: 100%; height: auto; display: block; }
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* 80px -> 100px */
+    height: 80px; /* 100px -> 80px */
     z-index: 100;
     mix-blend-mode: difference;
     color: #fff;
@@ -261,7 +261,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 768px) {
-    .header { height: 80px; } /* 60px -> 80px */
+    .header { height: 60px; } /* 80px -> 60px */
     .header__inner { padding: 0 20px; }
     .header__logo img { height: 140px; } /* スマホ用ロゴサイズさらに拡大 */
     .nav-desktop { display: none; }
@@ -987,9 +987,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .footer__logo img {
-    height: 80px; /* フッターロゴサイズ */
+    height: 200px; /* フッターロゴサイズをヘッダーPC版と同じに */
     width: auto;
-    filter: invert(1); /* 黒背景なので白く反転 */
 }
 
 .footer__info {
@@ -1134,6 +1133,6 @@ img { max-width: 100%; height: auto; display: block; }
     }
     
     .footer__logo img {
-        height: 60px; /* スマホ用フッターロゴサイズ */
+        height: 140px; /* スマホ用フッターロゴサイズをヘッダーSP版と同じに */
     }
 }
