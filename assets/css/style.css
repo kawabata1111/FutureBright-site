@@ -108,7 +108,7 @@ img { max-width: 100%; height: auto; display: block; }
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 100px; /* 80px -> 100px */
     z-index: 100;
     mix-blend-mode: difference;
     color: #fff;
@@ -128,14 +128,15 @@ img { max-width: 100%; height: auto; display: block; }
 .header__logo {
     margin: 0;
     line-height: 1;
-    display: flex; /* 追加: 画像の垂直配置のため */
-    align-items: center; /* 追加 */
+    display: flex;
+    align-items: center;
 }
 
 .header__logo img {
-    height: 60px; /* ロゴの高さを大きく変更 */
+    height: 140px; /* 余白を考慮して大幅に拡大 */
     width: auto;
     display: block;
+    max-width: none; /* 念のため */
 }
 
 .nav-desktop {
@@ -257,9 +258,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 768px) {
-    .header { height: 60px; }
+    .header { height: 80px; } /* 60px -> 80px */
     .header__inner { padding: 0 20px; }
-    .header__logo img { height: 40px; } /* スマホ用ロゴサイズ調整 */
+    .header__logo img { height: 100px; } /* スマホ用ロゴサイズ大幅拡大 */
     .nav-desktop { display: none; }
     .menu-trigger { display: block; }
 }
