@@ -214,7 +214,7 @@ img { max-width: 100%; height: auto; display: block; }
     color: #1a1a1a;
 }
 .header.menu-open .menu-trigger span {
-    background-color: #1a1a1a;
+    background-color: #fff; /* メニューが開いた時（ヘッダーが通常ブレンドモードになった時）のハンバーガーメニューの色を白に */
 }
 
 /* Mobile Menu */
