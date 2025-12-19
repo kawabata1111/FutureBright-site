@@ -674,7 +674,7 @@ img { max-width: 100%; height: auto; display: block; }
 .service-card__num {
     font-family: var(--font-en);
     font-size: 3rem;
-    color: var(--color-line);
+    color: var(--color-accent);
     margin-bottom: 20px;
     display: block;
     font-weight: 300;
@@ -1094,6 +1094,18 @@ img { max-width: 100%; height: auto; display: block; }
     
     .service-card__img {
         height: 200px; /* 画像の高さを少し抑える */
+    }
+    
+    /* Service Detail List */
+    .service-list li {
+        font-size: 0.85rem;
+        padding: 15px 0;
+        line-height: 1.5;
+    }
+
+    .service-list li::before {
+        margin-right: 10px;
+        margin-top: 2px;
     }
 
     /* Footer */
