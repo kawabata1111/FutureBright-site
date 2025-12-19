@@ -83,10 +83,14 @@ img { max-width: 100%; height: auto; display: block; }
 .loading__logo { overflow: hidden; }
 
 .loading__text {
-    font-family: var(--font-en);
-    font-size: 2.5rem;
     display: inline-block;
     transform: translateY(100%);
+}
+
+.loading__text img {
+    width: 200px; /* ロード画面のロゴサイズ */
+    height: auto;
+    filter: invert(1); /* 黒背景なのでロゴを白く反転 */
 }
 
 .loading__overlay {
@@ -973,9 +977,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .footer__logo {
-    font-family: var(--font-en);
-    font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.footer__logo img {
+    height: 80px; /* フッターロゴサイズ */
+    width: auto;
+    filter: invert(1); /* 黒背景なので白く反転 */
 }
 
 .footer__info {
@@ -1119,7 +1127,7 @@ img { max-width: 100%; height: auto; display: block; }
         padding: 60px 0 30px;
     }
     
-    .footer__logo {
-        font-size: 2rem;
+    .footer__logo img {
+        height: 60px; /* スマホ用フッターロゴサイズ */
     }
 }
