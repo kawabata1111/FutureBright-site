@@ -133,7 +133,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .header__logo img {
-    height: 140px; /* 余白を考慮して大幅に拡大 */
+    height: 200px; /* さらに拡大 */
     width: auto;
     display: block;
     max-width: none; /* 念のため */
@@ -260,7 +260,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 768px) {
     .header { height: 80px; } /* 60px -> 80px */
     .header__inner { padding: 0 20px; }
-    .header__logo img { height: 100px; } /* スマホ用ロゴサイズ大幅拡大 */
+    .header__logo img { height: 140px; } /* スマホ用ロゴサイズさらに拡大 */
     .nav-desktop { display: none; }
     .menu-trigger { display: block; }
 }
