@@ -87,26 +87,43 @@
                 </div>
 
                 <div class="form-wrap">
-                    <form action="#" method="post">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+                        <!-- Netlify Forms hidden fields -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display:none;">
+                            <label>Don't fill this out: <input name="bot-field"></label>
+                        </p>
+
                         <div class="form-item">
                             <label class="form-label">お名前 <span style="color: #b89c7d">*</span></label>
-                            <input type="text" class="form-input" placeholder="例：山田 太郎" required>
+                            <input type="text" name="name" class="form-input" placeholder="例：山田 太郎" required>
                         </div>
                         <div class="form-item">
                             <label class="form-label">会社名</label>
-                            <input type="text" class="form-input" placeholder="例：FutureBright株式会社">
+                            <input type="text" name="company" class="form-input" placeholder="例：FutureBright株式会社">
                         </div>
                         <div class="form-item">
                             <label class="form-label">メールアドレス <span style="color: #b89c7d">*</span></label>
-                            <input type="email" class="form-input" placeholder="info@futurebright.co.jp" required>
+                            <input type="email" name="email" class="form-input" placeholder="info@futurebright.co.jp" required>
                         </div>
                         <div class="form-item">
                             <label class="form-label">電話番号</label>
-                            <input type="tel" class="form-input" placeholder="03-1234-5678">
+                            <input type="tel" name="phone" class="form-input" placeholder="03-1234-5678">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">お問い合わせ種別</label>
+                            <select name="inquiry-type" class="form-input">
+                                <option value="">選択してください</option>
+                                <option value="生成AI活用講習について">生成AI活用講習について</option>
+                                <option value="資料請求">資料請求</option>
+                                <option value="ふるさと納税支援について">ふるさと納税支援について</option>
+                                <option value="IT化診断・Web制作について">IT化診断・Web制作について</option>
+                                <option value="その他">その他</option>
+                            </select>
                         </div>
                         <div class="form-item">
                             <label class="form-label">お問い合わせ内容 <span style="color: #b89c7d">*</span></label>
-                            <textarea class="form-input" rows="6" placeholder="ご自由にご記入ください" required></textarea>
+                            <textarea name="message" class="form-input" rows="6" placeholder="ご自由にご記入ください" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">送信する</button>
                     </form>
