@@ -109,3 +109,15 @@ window.addEventListener('scroll', () => {
         header.classList.remove('is-scrolled');
     }
 });
+
+// Fixed CTA Banner Visibility
+const fixedCta = document.getElementById('fixedCta');
+if (fixedCta) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            fixedCta.classList.add('is-visible');
+        } else {
+            fixedCta.classList.remove('is-visible');
+        }
+    });
+}

@@ -1133,3 +1133,426 @@ img { max-width: 100%; height: auto; display: block; }
         font-size: 2rem;
     }
 }
+
+/* ==========================================================================
+   Training Program Section (生成AI活用講習)
+   ========================================================================== */
+
+/* 教育訓練機関バッジ */
+.cert-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+
+/* 研修プログラムコンテナ */
+.training-program {
+    background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.training-title {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.training-desc {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* アジェンダタイトル */
+.agenda-title {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* アジェンダリスト */
+.agenda-list {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.agenda-list dl {
+    margin: 0;
+}
+
+.agenda-item {
+    padding: 20px 25px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.2s;
+}
+
+.agenda-item:hover {
+    background-color: #f8fafc;
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+}
+
+.agenda-item dt {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.agenda-item dt span {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    font-weight: 400;
+    background: #fef3c7;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.agenda-item dd {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* 受講後の成果 */
+.training-outcome {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+}
+
+.training-outcome h5 {
+    font-size: 1rem;
+    color: #065f46;
+    margin-bottom: 10px;
+}
+
+.training-outcome p {
+    font-size: 1rem;
+    color: #047857;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* CTA - 資料請求・お申込み */
+.training-contact {
+    margin-top: 40px;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 12px;
+}
+
+.btn-primary-solid {
+    display: inline-block;
+    background: #fff;
+    color: #1e3a8a;
+    padding: 18px 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary-solid:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    background: #f0f9ff;
+}
+
+.contact-info-box {
+    margin-top: 25px;
+    color: #fff;
+}
+
+.contact-info-box .contact-tel {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.contact-info-box .contact-tel a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-info-box .contact-email {
+    font-size: 0.95rem;
+}
+
+.contact-info-box .contact-email a {
+    color: #93c5fd;
+}
+
+/* 固定CTA バナー */
+.fixed-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 15px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.fixed-cta.is-visible {
+    transform: translateY(0);
+}
+
+.fixed-cta__text {
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.fixed-cta__btn {
+    background: #fff;
+    color: #1e3a8a;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.fixed-cta__btn:hover {
+    background: #f0f9ff;
+    transform: scale(1.05);
+}
+
+/* トップページ用 教育訓練機関セクション */
+.training-promo {
+    background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 100%);
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.training-promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.training-promo .container {
+    position: relative;
+    z-index: 1;
+}
+
+.training-promo__badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #93c5fd;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.training-promo__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.training-promo__lead {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.training-promo__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.training-promo__feature {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.training-promo__feature-num {
+    font-family: var(--font-en);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.training-promo__feature-text {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.training-promo__cta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary-light {
+    display: inline-block;
+    background: #fff;
+    color: #1e3a8a;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-primary-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+}
+
+.btn-outline-light {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 14px 40px;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .training-program {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .training-title {
+        font-size: 1.2rem;
+    }
+
+    .agenda-title {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .agenda-item {
+        padding: 15px;
+    }
+
+    .agenda-item dt {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .agenda-item dd {
+        font-size: 0.85rem;
+    }
+
+    .training-contact {
+        padding: 30px 20px;
+    }
+
+    .btn-primary-solid {
+        padding: 15px 35px;
+        font-size: 1rem;
+    }
+
+    .contact-info-box .contact-tel {
+        font-size: 1rem;
+    }
+
+    .fixed-cta {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .fixed-cta__text {
+        font-size: 0.85rem;
+    }
+
+    .training-promo {
+        padding: 60px 0;
+    }
+
+    .training-promo__title {
+        font-size: 1.8rem;
+    }
+
+    .training-promo__features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .training-promo__cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary-light,
+    .btn-outline-light {
+        width: 100%;
+        text-align: center;
+    }
+}
